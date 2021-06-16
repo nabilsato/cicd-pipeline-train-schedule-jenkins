@@ -4,10 +4,6 @@ pipeline {
     stage('gradledep') {
       steps {
         withGradle()
-        withGradle() {
-          sh './gradlew build'
-        }
-
       }
     }
 
