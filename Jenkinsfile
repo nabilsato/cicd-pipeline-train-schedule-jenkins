@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('gradledep') {
       steps {
-        withGradle()
+        withGradle() {
+          sh 'gradelw'
+        }
+
       }
     }
 
