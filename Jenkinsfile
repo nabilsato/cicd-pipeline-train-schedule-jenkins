@@ -12,7 +12,7 @@ pipeline {
 
     stage('test') {
       steps {
-        sh 'gradlew npm_start'
+        sh './gradlew npm_start'
       }
     }
 
